@@ -1,0 +1,30 @@
+//power
+
+#include<iostream>
+using namespace std;
+// int power(int m, int n){
+//   int pow=1;
+// for (int i = 1; i<=n; i++)
+    
+// {
+ 
+//     pow=pow*m;
+// }
+// return pow;
+// }
+int power(int m, int n){
+    if(n==0)
+    return 1;
+    return power(m,n-1)*m;
+}
+
+
+int main(){
+    int m,r,n;
+cin>>m;
+cin>>n;
+r=power(m,n);
+cout<<"the power is "<<r<<endl;
+
+    return 0;
+}
